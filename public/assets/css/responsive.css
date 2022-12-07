@@ -1,0 +1,141 @@
+/*For Mobile*/
+@media only screen and (max-width:760px) {
+	body, html {overflow-x: hidden;}
+
+	.header-top-left {padding: 10px 30px 10px 0; width: -webkit-calc(100% - 180px); width: calc(100% - 180px);}
+	.header-top-left ul li {margin: 0 0 0 15px;}
+	.header-top-right {max-width: 180px;}
+	.header-top-right ul li {margin: 0 0 0 15px;}
+	.header-top-right ul li:first-child {margin: 0;}
+	
+	.header-mid-section .logo {margin: 0;}
+	.header-mid-section .logo img {height: 60px;}
+	
+	.header-bot-section {background: #ba0a1b; background: -moz-linear-gradient(left,  #ba0a1b 0%, #ba0a1b 75%, #ba0a1b 75%, #ba0a1b 100%); background: -webkit-linear-gradient(left,  #ba0a1b 0%,#ba0a1b 75%,#ba0a1b 75%,#ba0a1b 100%); background: linear-gradient(to right,  #ba0a1b 0%,#ba0a1b 75%,#ba0a1b 75%,#ba0a1b 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba0a1b', endColorstr='#ba0a1b',GradientType=1 );}
+
+	.header-search {height: auto; float: none; padding: 5px 0 10px 0;}
+	.header-search::after {display: none;}
+	.header-search input[type="search"] {border-radius: 5px 5px 0 0;}
+	.header-search select {border-radius: 0 0 0 5px;}
+	.header-search button[type="submit"] {border-radius: 0 0 5px 0;}
+	
+	.banner-section {padding: 0;}
+	.banner-section .container-fluid {padding: 0;}
+	.legal-help {margin: 15px 0 30px 0; padding: 15px; min-height: inherit; border: none;}
+	.request-a-item {padding: 15px;}
+	.request-a-item > h3 {margin: 0 -15px;}
+	.request-a-item > h3::after {display: none;}
+	
+	.inner-banner-section .wrapper {padding: 50px 0;}
+	.inner-banner-section  h1 {font-size: 24px;}		
+	
+	
+	.content-section {min-height:inherit;}
+	.content-section h1 {font-size:26px;}
+	.content-section h2 {font-size:24px;}
+	.content-section h3 {font-size:22px;}
+	.content-section h4 {font-size:20px;}
+	.content-section h5 {font-size:18px;}
+	.content-section h6 {font-size:16px;}
+	.content-section p {font-size:14px;}
+	.content-section ul li {font-size:14px;}
+	.content-section ol li {font-size:14px;}
+	
+	.paginations ul li {margin: 2px; width: 36px; height: 36px; font-size: 14px; line-height: 34px;}
+	.paginations ul li a {width: 34px; height: 34px;}
+	
+	
+	.download-section {padding: 30px 0;}
+
+	.download-section h2 {padding: 0 0 20px 0;}
+	.download-section a {padding: 10px; font-size: 16px; line-height: 50px; margin: 5px auto;}
+	.download-section a img {height: 50px;}
+	
+	.products-slider01 {margin: 0;}
+	
+	.product-image-slider-01 .product-category-title {background-color: #b47001;}
+	.product-image-slider-02 .product-category-title {background-color: #079080;}
+	.product-image-slider-03 .product-category-title {background-color: #6d8d28;}
+	.product-image-slider-04 .product-category-title {background-color: #ab0505;}
+	.product-image-slider-05 .product-category-title {background-color: #145ea5;}
+	
+	.products-section {padding: 0;}	
+	.products-section .container-fluid {padding: 0 15px 50px 15px;}
+	
+	.services-section {padding: 15px 0 60px 0;}
+	
+	.business-details-section {padding: 30px 0;}
+	.business-details-section .left-section {padding: 0 15px;}
+	.business-details-section .right-section {padding: 0 15px;}
+	.item-search-image {height: 200px;}
+	
+	.law-categories-section {padding: 30px 0;}
+	.law-categories-section ul {column-count: 1; -webkit-columns: 1; -moz-columns: 1;}
+	
+	.cart-details-section {padding: 30px 0;}
+	.cart-details-section .left-section {padding: 0 15px;}
+	.cart-details-section .right-section {padding: 0 15px;}
+	.cart-left-box .item-box {padding: 15px;}
+	.cart-left-box .item-box .btn-primary {margin-top: 15px;}
+	
+	.form-btn, .form-btn-2 {padding: 0 15px;}
+	
+	.tender-list-section {padding: 30px 0;}
+	.sort-by-panel {margin: 30px 0 100px 0;}
+	
+	.tender-details {padding: 15px;}
+	.tab-content li a {padding: 0 15px; margin-right: 0; font-size: 14px;}
+	
+	.footer-section {padding: 20px 0;}
+	.footer-section h4 {font-size: 22px; padding: 10px 0;}
+	.footer-section h5 {font-size: 16px; padding: 20px 0 0 0;}
+	.footer-section ul li {margin: 10px 0;}
+	.footer-section ul.link li {margin: 5px 0 !important;}
+
+	.copyrights-section {padding: 10px 0;}
+	.copyrights-section p {font-size: 13px;}
+
+
+
+}
+/*For Midium Mobile*/
+@media only screen and (min-width:480px) and (max-width:760px) {
+
+}
+/*For Tablet*/
+@media only screen and (min-width:761px) and (max-width:1023px) {
+	.container, .container-lg, .container-md, .container-sm {max-width: 100% !important;}
+	.header-mid-section .logo {margin-top: -40px;}
+	.request-a-item > h3 {margin: 15px 25px 15px 0;}
+	.inner-banner-section .wrapper {padding: 100px 0;}
+	.business-details-section .left-section {padding: 0 15px;}
+	.business-details-section .right-section {padding: 0 15px;}
+	.law-categories-section ul {column-count: 2; -webkit-columns: 2; -moz-columns: 2;}
+	.cart-right-box {padding: 30px;}
+	.cart-details-section .left-section {padding: 0 15px;}
+	.cart-details-section .right-section {padding: 0 15px;}
+	
+}
+@media only screen and (min-width:1024px) and (max-width:1100px) {
+	.container, .container-lg, .container-md, .container-sm {max-width: 100% !important;}
+	.header-mid-section .logo {margin-top: -40px;}
+	.header-mid-section .menu {width: 100%;}
+	.nav-links li a {margin: 0 8px !important;}
+	.business-details-section .left-section {padding: 0 15px;}
+	.business-details-section .right-section {padding: 0 15px;}
+	.law-categories-section ul {column-count: 3; -webkit-columns: 3; -moz-columns: 3;}	
+	.cart-details-section .left-section {padding: 0 15px;}
+	.cart-details-section .right-section {padding: 0 15px;}
+	
+}
+@media only screen and (min-width:1101px) and (max-width:1260px) {
+	.container, .container-lg, .container-md, .container-sm {max-width: 100% !important;}
+	.header-mid-section .logo {margin-top: -40px;}
+	.header-mid-section .menu {width: 100%;}
+	.nav-links li a {margin: 0 12px !important;}
+	.business-details-section .left-section {padding: 0 15px;}
+	.business-details-section .right-section {padding: 0 15px;}
+	.law-categories-section ul {column-count: 3; -webkit-columns: 3; -moz-columns: 3;}	
+	.cart-details-section .left-section {padding: 0 15px;}
+	.cart-details-section .right-section {padding: 0 15px;}
+}
