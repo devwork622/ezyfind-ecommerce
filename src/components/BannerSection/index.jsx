@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import "./style.module.scss"
+import { Link } from 'react-router-dom';
 
 const BannerSection = () => {
     return (
@@ -25,12 +26,12 @@ const BannerSection = () => {
                                     <div className="item">
                                         <h5>Legal Help</h5>
                                         <ul>
-                                            <li className="wh"><a href="#">What's Hot</a></li>
-                                            <li className="es"><a href="#">Ending Soon</a></li>
-                                            <li className="gd"><a href="#">Guide</a></li>
-                                            <li className="wn"><a href="#">What's New</a></li>
-                                            <li className="ts"><a href="#">Top Searches</a></li>
-                                            <li className="rb"><a href="#">Recent Buys</a></li>
+                                            <li className="wh"><Link to="#">What's Hot</Link></li>
+                                            <li className="es"><Link to="#">Ending Soon</Link></li>
+                                            <li className="gd"><Link to="#">Guide</Link></li>
+                                            <li className="wn"><Link to="#">What's New</Link></li>
+                                            <li className="ts"><Link to="#">Top Searches</Link></li>
+                                            <li className="rb"><Link to="#">Recent Buys</Link></li>
                                         </ul>
                                     </div>
                                 </Carousel.Item>
@@ -38,8 +39,8 @@ const BannerSection = () => {
                                     <div className="item">
                                         <h5>Most</h5>
                                         <ul>
-                                            <li className="wh"><a href="#">Most Viewed</a></li>
-                                            <li className="es"><a href="#">Most interactive</a></li>
+                                            <li className="wh"><Link to="#">Most Viewed</Link></li>
+                                            <li className="es"><Link to="#">Most interactive</Link></li>
                                         </ul>
                                     </div>
                                 </Carousel.Item>
@@ -47,9 +48,9 @@ const BannerSection = () => {
                                     <div className="item">
                                         <h5>Download</h5>
                                         <ul>
-                                            <li className="wh"><a href="#">Most viewed</a></li>
-                                            <li className="gd"><a href="#">Frequent downloaded</a></li>
-                                            <li className="es"><a href="#">Most downloaded</a></li>
+                                            <li className="wh"><Link to="#">Most viewed</Link></li>
+                                            <li className="gd"><Link to="#">Frequent downloaded</Link></li>
+                                            <li className="es"><Link to="#">Most downloaded</Link></li>
                                         </ul>
                                     </div>
                                 </Carousel.Item>
@@ -76,8 +77,8 @@ const BannerSection = () => {
                                     <hr className="right" />
                                 </div>
                                 <div className="row mb-3">
-                                    <div className="col-6 text-left"><a href="#"><img src="assets/images/facebook-login.jpg" alt="" /></a></div>
-                                    <div className="col-6 text-right"><a href="#"><img src="assets/images/google-plus-login.jpg" alt="" /></a></div>
+                                    <div className="col-6 text-left"><Link to="#"><img src="assets/images/facebook-login.jpg" alt="" /></Link></div>
+                                    <div className="col-6 text-right"><Link to="#"><img src="assets/images/google-plus-login.jpg" alt="" /></Link></div>
                                 </div>
                                 <button type="submit" className="btn btn-primary">Request</button>
                             </form>

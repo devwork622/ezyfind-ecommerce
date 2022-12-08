@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const TenderBox = ({content, id, author, date, views}) => {
     return (
@@ -12,7 +13,7 @@ const TenderBox = ({content, id, author, date, views}) => {
                 <div className="col-lg-5 text-right">
                     <p><span>{author}</span></p>
                     <p>{date}</p>
-                    <p className="mt-2">{views} views <a href="/tender-details">Moualanga</a></p>
+                    <p className="mt-2">{views} views <Link to="/tender-details">Moualanga</Link></p>
                 </div>
             </div>
         </div>

@@ -1,30 +1,33 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import "./style.module.scss";
-import { BsFillCartFill, BsHammer, BsSearch, BsList, BsChevronDown } from "react-icons/bs";
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
+    const storeValue = useSelector((store) => store)
+
     return (
         <>
             <div className="header-top-section clearfix">
                 <div className="container">
                     <div className="header-top-left">
                         <ul>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Register</a></li>
+                            <li><Link to="#">Login</Link></li>
+                            <li><Link to="#">Register</Link></li>
                         </ul>
                     </div>
                     <div className="header-top-right">
                         <ul>
-                            <li><a href="#"><i className="fa-solid fa-cart-shopping"></i> Cart(0)</a></li>
-                            <li><a href="#"><i className="fa-solid fa-gavel"></i> My Bid(0)</a></li>
+                            <li><Link to="#"><i className="fa-solid fa-cart-shopping"></i> Cart({storeValue.CartReducer.count_cart})</Link></li>
+                            <li><Link to="#"><i className="fa-solid fa-gavel"></i> My Bid(0)</Link></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div className="header-mid-section clearfix">
                 <div className="container">
-                    <div className="logo"><a href="/"><img src="assets/images/logo.png" alt="" /></a></div>
+                    <div className="logo"><Link to="/"><img src="assets/images/logo.png" alt="" /></Link></div>
                     <div className="menu">
                         <Nav>
                             <div className="wrapper">
@@ -32,38 +35,38 @@ const Header = () => {
                                 <input type="radio" name="slider" id="close-btn"></input>
                                 <ul className="nav-links">
                                     <label htmlFor="close-btn" className="btn close-btn"><i className="fas fa-times"></i></label>
-                                    <li><a href="/">Home</a></li>
-                                    <li><a href="#">List of Attorneys / Lawyers</a></li>
-                                    <li><a href="#" className="desktop-item">Legal Process</a>
+                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/attorneys">List of Attorneys / Lawyers</Link></li>
+                                    <li><Link to="#" className="desktop-item">Legal Process</Link>
                                         <input type="checkbox" id="showDrop"></input>
                                         <label htmlFor="showDrop" className="mobile-item">Legal Process</label>
                                         <ul className="drop-menu">
-                                            <li><a href="#">Free lease agreements</a></li>
-                                            <li><a href="#">Adopting A Child</a></li>
-                                            <li><a href="#">Association agreement</a></li>
-                                            <li><a href="#">Business Contract Template</a></li>
-                                            <li><a href="#">Child Maintenance</a></li>
-                                            <li><a href="#">Criminal Matter</a></li>
-                                            <li><a href="#">Domestic Violence</a></li>
-                                            <li><a href="#">Fostering a Child</a></li>
-                                            <li><a href="#">Antenuptial contract</a></li>
-                                            <li><a href="#">Peace Order</a></li>
-                                            <li><a href="#">Legal Agreements Online</a></li>
-                                            <li><a href="#">Offer to purchase</a></li>
-                                            <li><a href="#">Pro bono attorneys</a></li>
-                                            <li><a href="#">Living Will</a></li>
-                                            <li><a href="#">Intellectual Property</a></li>
-                                            <li><a href="#">VISA Process</a></li>
-                                            <li><a href="#">Spousal Maintenance</a></li>
-                                            <li><a href="#">Child Maintenance</a></li>
+                                            <li><Link to="#">Free lease agreements</Link></li>
+                                            <li><Link to="#">Adopting A Child</Link></li>
+                                            <li><Link to="#">Association agreement</Link></li>
+                                            <li><Link to="#">Business Contract Template</Link></li>
+                                            <li><Link to="#">Child Maintenance</Link></li>
+                                            <li><Link to="#">Criminal Matter</Link></li>
+                                            <li><Link to="#">Domestic Violence</Link></li>
+                                            <li><Link to="#">Fostering a Child</Link></li>
+                                            <li><Link to="#">Antenuptial contract</Link></li>
+                                            <li><Link to="#">Peace Order</Link></li>
+                                            <li><Link to="#">Legal Agreements Online</Link></li>
+                                            <li><Link to="#">Offer to purchase</Link></li>
+                                            <li><Link to="#">Pro bono attorneys</Link></li>
+                                            <li><Link to="#">Living Will</Link></li>
+                                            <li><Link to="#">Intellectual Property</Link></li>
+                                            <li><Link to="#">VISA Process</Link></li>
+                                            <li><Link to="#">Spousal Maintenance</Link></li>
+                                            <li><Link to="#">Child Maintenance</Link></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">List Your Law Firm</a></li>
-                                    <li><a href="#">FREE Legal Agreements</a></li>
-                                    <li><a href="/apply">Legal Jobs</a></li>
-                                    <li><a href="/tenders">Tenders</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><Link to="#">List Your Law Firm</Link></li>
+                                    <li><Link to="#">FREE Legal Agreements</Link></li>
+                                    <li><Link to="/apply">Legal Jobs</Link></li>
+                                    <li><Link to="/tenders">Tenders</Link></li>
+                                    <li><Link to="#">About</Link></li>
+                                    <li><Link to="#">Contact</Link></li>
                                 </ul>
                                 <label htmlFor="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
                             </div>

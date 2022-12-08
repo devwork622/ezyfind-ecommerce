@@ -145,8 +145,8 @@ nav input {display: none;}
 .request-a-item .btn-primary {background-color: #ba091b; border-color: #ba091b; border-radius: 0; font-size: 14px; padding: .375rem 1.5rem; float: right;}
 
 .or {font-size: 14px; font-weight: 400; color: #000000; text-align: center; margin-bottom: 10px;}
-hr.left{display: inline-block; width: 44%; vertical-align: middle; height: 1px; background: #000000; background: linear-gradient(left, rgba(0,0,0,1), #000000); background: -webkit-linear-gradient(left, rgba(0,0,0,1), #000000); background: -moz-linear-gradient(left, rgba(0,0,0,1), #000000); background: -ms-linear-gradient(left, rgba(0,0,0,1), #000000); background: -o-linear-gradient(left, rgba(0,0,0,1), #000000); border: none; float: none;}
-hr.right{display: inline-block; width: 44%; vertical-align: middle; height: 1px; background: #000000; background: linear-gradient(left, #000000, rgba(0,0,0,1)); background: -webkit-linear-gradient(left, #000000, rgba(0,0,0,1)); background: -moz-linear-gradient(left, #000000, rgba(0,0,0,1)); background: -ms-linear-gradient(left, #000000, rgba(0,0,0,1)); background: -o-linear-gradient(left, #000000, rgba(0,0,0,1)); border: none; float: none;}
+hr.left{display: inline-block; width: 44%; vertical-align: middle; height: 1px; background: #000000; background: linear-gradient(to left, rgba(0,0,0,1), #000000); background: -webkit-linear-gradient(to left, rgba(0,0,0,1), #000000); background: -moz-linear-gradient(to left, rgba(0,0,0,1), #000000); background: -ms-linear-gradient(to left, rgba(0,0,0,1), #000000); background: -o-linear-gradient(to left, rgba(0,0,0,1), #000000); border: none; float: none;}
+hr.right{display: inline-block; width: 44%; vertical-align: middle; height: 1px; background: #000000; background: linear-gradient(to left, #000000, rgba(0,0,0,1)); background: -webkit-linear-gradient(to left, #000000, rgba(0,0,0,1)); background: -moz-linear-gradient(to left, #000000, rgba(0,0,0,1)); background: -ms-linear-gradient(to left, #000000, rgba(0,0,0,1)); background: -o-linear-gradient(to left, #000000, rgba(0,0,0,1)); border: none; float: none;}
 
 .legal-help {margin: 15px 0; padding: 30px; min-height: 353px; border: 1px solid #d5d5d5;}
 .legal-help h5 {font-size: 16px; font-weight: 600; line-height: 1.4; color: #000000; padding: 10px 0;}
@@ -448,7 +448,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {font-family: 'Poppins', sa
 /* 	-----------------------------------------------------
 ------------------ Go to top Styles -----------------
 ----------------------------------------------------- */
-.cd-top {display: inline-block; height: 40px; width: 40px; position: fixed; bottom: 15px; right: 15px; z-index: 999; overflow: hidden; text-indent: 100%; white-space: nowrap; background: #bb0a1c url(../public/assets/fonts/cd-top-arrow.svg) no-repeat center; border-radius: 6px; visibility: hidden; opacity: 0; -webkit-transition: opacity .3s 0s, visibility 0s .3s; -moz-transition: opacity .3s 0s, visibility 0s .3s; transition: opacity .3s 0s, visibility 0s .3s;}
+.cd-top {display: inline-block; height: 40px; width: 40px; position: fixed; bottom: 15px; right: 15px; z-index: 999; overflow: hidden; text-indent: 100%; white-space: nowrap; background: #bb0a1c url(../public/assets/fonts/cd-top-arrow.svg) no-repeat center; border-radius: 6px; border: none; -webkit-transition: opacity .3s 0s, visibility 0s .3s; -moz-transition: opacity .3s 0s, visibility 0s .3s; transition: opacity .3s 0s, visibility 0s .3s;}
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {-webkit-transition: opacity .3s 0s, visibility 0s 0s; -moz-transition: opacity .3s 0s, visibility 0s 0s; transition: opacity .3s 0s, visibility 0s 0s;}
 .cd-top.cd-is-visible {visibility: visible; opacity: 1;}
 .cd-top.cd-fade-out {opacity: 1;}

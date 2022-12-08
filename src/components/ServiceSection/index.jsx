@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './style.module.scss';
+import { Link } from 'react-router-dom';
 
 const ServiceSection = () => {
 
@@ -41,7 +42,7 @@ const ServiceSection = () => {
                             <div className="item" key={e}>
                                 <div className="services-box"><img src={e.url} alt="" />
                                     <h6>{e.title}</h6>
-                                    <div className="btn-rfq"><a href="#">Request for Quote <i className="fa-solid fa-arrow-right-long"></i></a></div>
+                                    <div className="btn-rfq"><Link to="#">Request for Quote <i className="fa-solid fa-arrow-right-long"></i></Link></div>
                                 </div>
                             </div>
                         )

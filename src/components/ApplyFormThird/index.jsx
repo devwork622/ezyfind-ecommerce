@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import validator from "validator";
 import { Form } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 const ApplyFormThird = ({ nextStep, handleFormData, prevStep, values }) => {
 
@@ -57,10 +58,10 @@ const ApplyFormThird = ({ nextStep, handleFormData, prevStep, values }) => {
                 </div>
                 <div className="row">
                     <div className="col-6">
-                        <div className="btn-social-link"><a href="#"><i className="fa-brands fa-facebook"></i> Facebook</a></div>
+                        <div className="btn-social-link"><Link to=""><i className="fa-brands fa-facebook"></i> Facebook</Link></div>
                     </div>
                     <div className="col-6">
-                        <div className="btn-social-link"><a href="#"><i className="fa-brands fa-google"></i> Google</a></div>
+                        <div className="btn-social-link"><Link to=""><i className="fa-brands fa-google"></i> Google</Link></div>
                     </div>
                 </div>
                 <div className="row">
